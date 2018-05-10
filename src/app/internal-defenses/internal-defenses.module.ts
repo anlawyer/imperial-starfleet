@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { DeathSquareComponent } from './death-square/death-square.component';
 import { LaserCannonComponent } from './laser-cannon/laser-cannon.component';
@@ -7,7 +8,8 @@ import { TurretComponent } from './turret/turret.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
     DeathSquareComponent,
@@ -15,9 +17,7 @@ import { TurretComponent } from './turret/turret.component';
     TurretComponent
   ],
   exports: [
-    DeathSquareComponent,
-    LaserCannonComponent,
-    TurretComponent
+    DeathSquareComponent
   ]
 })
 export class InternalDefensesModule { }
